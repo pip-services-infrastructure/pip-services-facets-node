@@ -1,0 +1,16 @@
+---
+- descriptor: "pip-services-commons:logger:console:default:1.0"
+  level: "trace"
+
+- descriptor: "pip-services-facets:persistence:file:default:1.0"
+  path: "./data/facets.json"
+
+- descriptor: "pip-services-facets:controller:default:default:1.0"
+  options:
+    max_facet_count: 100
+
+- descriptor: "pip-services-facets:service:http:default:1.0"
+  connection:
+    protocol: "http"
+    host: "0.0.0.0"
+    port: 8080
