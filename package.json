@@ -20,7 +20,7 @@
     "noAnalyze": true,
     "repository" : {
         "type": "git",
-        "url": "ssh://git@github.com:pip-services-content/pip-services-facets-node.git"
+        "url": "ssh://git@github.com:pip-services-infrastructure/pip-services-facets-node.git"
     },
     "license": "MIT",
     "engines": {
