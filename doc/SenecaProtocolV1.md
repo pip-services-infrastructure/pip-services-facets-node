@@ -55,6 +55,7 @@ Retrieves facets for specified froup
 
 **Arguments:** 
 - group: string - facet group name
+- paging: PagingParams - paging parameters
 
 **Returns:**
 - err: Error - occured error or null for success
