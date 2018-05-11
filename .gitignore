@@ -4,3 +4,4 @@
 /data/facets.test.json
 /data/facets.json
 /obj/test
+/docker/id_rsa*
