@@ -57,7 +57,7 @@ suite('FacetsHttpServiceV1', ()=> {
         async.series([
         // Add facet 1
             (callback) => {
-                rest.post("/facets/add_facet",
+                rest.post("/v1/facets/add_facet",
                     {
                         group: "test",
                         name: "group1"
@@ -75,7 +75,7 @@ suite('FacetsHttpServiceV1', ()=> {
             },
         // Remove facet 1
             (callback) => {
-                rest.post("/facets/remove_facet",
+                rest.post("/v1/facets/remove_facet",
                     {
                         group: "test",
                         name: "group2"
@@ -93,7 +93,7 @@ suite('FacetsHttpServiceV1', ()=> {
             },
         // Read facets
             (callback) => {
-                rest.post("/facets/get_facets_by_group",
+                rest.post("/v1/facets/get_facets_by_group",
                     {
                         group: "test"
                     },
@@ -108,7 +108,7 @@ suite('FacetsHttpServiceV1', ()=> {
             },
         // Delete facets
             (callback) => {
-                rest.post("/facets/delete_facets_by_group",
+                rest.post("/v1/facets/delete_facets_by_group",
                     {
                         group: "test"
                     },
@@ -120,7 +120,7 @@ suite('FacetsHttpServiceV1', ()=> {
             },
         // Read facets
             (callback) => {
-                rest.post("/facets/get_facets_by_group",
+                rest.post("/v1/facets/get_facets_by_group",
                     {
                         group: "test"
                     },
