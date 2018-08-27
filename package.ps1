@@ -22,7 +22,8 @@ try {
     # Test using curl
     Start-Sleep -Seconds 10
     Invoke-WebRequest -Uri http://localhost:8080/heartbeat
-    #Invoke-WebRequest -Uri http://localhost:8080/dashboards/get_dashboards
+    #$postParams = @{ group="123" }
+    #Invoke-WebRequest -Uri http://localhost:8080/v1/facets/get_facets_by_group -Method POST -Body $postParams
 
     Write-Host "The container was successfully built."
 } finally {

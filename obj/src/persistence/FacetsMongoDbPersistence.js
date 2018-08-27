@@ -3,10 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 let _ = require('lodash');
 const pip_services_commons_node_1 = require("pip-services-commons-node");
 const pip_services_commons_node_2 = require("pip-services-commons-node");
-const pip_services_data_node_1 = require("pip-services-data-node");
+const pip_services_mongodb_node_1 = require("pip-services-mongodb-node");
 const FacetV1_1 = require("../data/version1/FacetV1");
 const FacetsMongoDbSchema_1 = require("./FacetsMongoDbSchema");
-class FacetsMongoDbPersistence extends pip_services_data_node_1.MongoDbPersistence {
+class FacetsMongoDbPersistence extends pip_services_mongodb_node_1.MongoDbPersistence {
     constructor() {
         super('facets', FacetsMongoDbSchema_1.FacetsMongoDbSchema());
         this._maxPageSize = 100;

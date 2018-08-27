@@ -1,7 +1,7 @@
 import { ConfigParams } from 'pip-services-commons-node';
 import { PagingParams } from 'pip-services-commons-node';
 import { DataPage } from 'pip-services-commons-node';
-import { MongoDbPersistence } from 'pip-services-data-node';
+import { MongoDbPersistence } from 'pip-services-mongodb-node';
 import { FacetV1 } from '../data/version1/FacetV1';
 import { IFacetsPersistence } from './IFacetsPersistence';
 export declare class FacetsMongoDbPersistence extends MongoDbPersistence implements IFacetsPersistence {
