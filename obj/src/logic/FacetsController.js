@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 let _ = require('lodash');
-const pip_services_commons_node_1 = require("pip-services-commons-node");
-const pip_services_commons_node_2 = require("pip-services-commons-node");
+const pip_services3_commons_node_1 = require("pip-services3-commons-node");
+const pip_services3_commons_node_2 = require("pip-services3-commons-node");
 const FacetsCommandSet_1 = require("./FacetsCommandSet");
 class FacetsController {
     constructor() {
-        this._dependencyResolver = new pip_services_commons_node_2.DependencyResolver(FacetsController._defaultConfig);
+        this._dependencyResolver = new pip_services3_commons_node_2.DependencyResolver(FacetsController._defaultConfig);
     }
     configure(config) {
         this._dependencyResolver.configure(config);
@@ -36,6 +36,6 @@ class FacetsController {
         this._persistence.clear(correlationId, callback);
     }
 }
-FacetsController._defaultConfig = pip_services_commons_node_1.ConfigParams.fromTuples('dependencies.persistence', 'pip-services-facets:persistence:*:*:1.0');
+FacetsController._defaultConfig = pip_services3_commons_node_1.ConfigParams.fromTuples('dependencies.persistence', 'pip-services-facets:persistence:*:*:1.0');
 exports.FacetsController = FacetsController;
 //# sourceMappingURL=FacetsController.js.map

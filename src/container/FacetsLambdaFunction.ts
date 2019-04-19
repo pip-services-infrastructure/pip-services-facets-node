@@ -1,6 +1,6 @@
-import { Descriptor } from 'pip-services-commons-node';
-import { CommandableLambdaFunction } from 'pip-services-aws-node';
-import { DefaultRpcFactory } from 'pip-services-rpc-node';
+import { Descriptor } from 'pip-services3-commons-node';
+import { CommandableLambdaFunction } from 'pip-services3-aws-node';
+import { DefaultRpcFactory } from 'pip-services3-rpc-node';
 
 import { FacetsServiceFactory } from '../build/FacetsServiceFactory';
 

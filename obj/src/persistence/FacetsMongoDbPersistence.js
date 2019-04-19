@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 let _ = require('lodash');
-const pip_services_commons_node_1 = require("pip-services-commons-node");
-const pip_services_commons_node_2 = require("pip-services-commons-node");
-const pip_services_mongodb_node_1 = require("pip-services-mongodb-node");
+const pip_services3_commons_node_1 = require("pip-services3-commons-node");
+const pip_services3_commons_node_2 = require("pip-services3-commons-node");
+const pip_services3_mongodb_node_1 = require("pip-services3-mongodb-node");
 const FacetV1_1 = require("../data/version1/FacetV1");
 const FacetsMongoDbSchema_1 = require("./FacetsMongoDbSchema");
-class FacetsMongoDbPersistence extends pip_services_mongodb_node_1.MongoDbPersistence {
+class FacetsMongoDbPersistence extends pip_services3_mongodb_node_1.MongoDbPersistence {
     constructor() {
         super('facets', FacetsMongoDbSchema_1.FacetsMongoDbSchema());
         this._maxPageSize = 100;
@@ -22,7 +22,7 @@ class FacetsMongoDbPersistence extends pip_services_mongodb_node_1.MongoDbPersis
             count: { $gt: 0 }
         };
         // Adjust max item count based on configuration
-        paging = paging || new pip_services_commons_node_1.PagingParams();
+        paging = paging || new pip_services3_commons_node_1.PagingParams();
         let skip = paging.getSkip(-1);
         let take = paging.getTake(this._maxPageSize);
         let pagingEnabled = paging.total;
@@ -45,12 +45,12 @@ class FacetsMongoDbPersistence extends pip_services_mongodb_node_1.MongoDbPersis
                         callback(err, null);
                         return;
                     }
-                    let page = new pip_services_commons_node_2.DataPage(items, count);
+                    let page = new pip_services3_commons_node_2.DataPage(items, count);
                     callback(null, page);
                 });
             }
             else {
-                let page = new pip_services_commons_node_2.DataPage(items);
+                let page = new pip_services3_commons_node_2.DataPage(items);
                 callback(null, page);
             }
         });

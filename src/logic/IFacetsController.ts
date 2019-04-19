@@ -1,6 +1,6 @@
-import { PagingParams } from 'pip-services-commons-node';
-import { DataPage } from 'pip-services-commons-node';
-import { ICleanable } from 'pip-services-commons-node';
+import { PagingParams } from 'pip-services3-commons-node';
+import { DataPage } from 'pip-services3-commons-node';
+import { ICleanable } from 'pip-services3-commons-node';
 
 import { FacetV1 } from '../data/version1/FacetV1';
 

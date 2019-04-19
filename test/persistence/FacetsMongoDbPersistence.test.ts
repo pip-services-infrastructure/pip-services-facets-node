@@ -1,6 +1,6 @@
 let process = require('process');
 
-import { ConfigParams } from 'pip-services-commons-node';
+import { ConfigParams } from 'pip-services3-commons-node';
 
 import { FacetsMongoDbPersistence } from '../../src/persistence/FacetsMongoDbPersistence';
 import { FacetsPersistenceFixture } from './FacetsPersistenceFixture';

@@ -1,8 +1,8 @@
-import { IConfigurable } from 'pip-services-commons-node';
-import { ConfigParams } from 'pip-services-commons-node';
-import { PagingParams } from 'pip-services-commons-node';
-import { DataPage } from 'pip-services-commons-node';
-import { MemoryPersistence } from 'pip-services-data-node';
+import { IConfigurable } from 'pip-services3-commons-node';
+import { ConfigParams } from 'pip-services3-commons-node';
+import { PagingParams } from 'pip-services3-commons-node';
+import { DataPage } from 'pip-services3-commons-node';
+import { MemoryPersistence } from 'pip-services3-data-node';
 import { FacetV1 } from '../data/version1/FacetV1';
 import { IFacetsPersistence } from './IFacetsPersistence';
 export declare class FacetsMemoryPersistence extends MemoryPersistence<FacetV1> implements IConfigurable, IFacetsPersistence {
