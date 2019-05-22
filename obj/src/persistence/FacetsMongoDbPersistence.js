@@ -3,12 +3,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 let _ = require('lodash');
 const pip_services3_commons_node_1 = require("pip-services3-commons-node");
 const pip_services3_commons_node_2 = require("pip-services3-commons-node");
-const pip_services3_mongodb_node_1 = require("pip-services3-mongodb-node");
+const pip_services3_mongoose_node_1 = require("pip-services3-mongoose-node");
 const FacetV1_1 = require("../data/version1/FacetV1");
-const FacetsMongoDbSchema_1 = require("./FacetsMongoDbSchema");
-class FacetsMongoDbPersistence extends pip_services3_mongodb_node_1.MongoDbPersistence {
+const FacetsMongooseSchema_1 = require("./FacetsMongooseSchema");
+class FacetsMongoDbPersistence extends pip_services3_mongoose_node_1.MongoosePersistence {
     constructor() {
-        super('facets', FacetsMongoDbSchema_1.FacetsMongoDbSchema());
+        super('facets', FacetsMongooseSchema_1.FacetsMongooseSchema());
         this._maxPageSize = 100;
     }
     configure(config) {

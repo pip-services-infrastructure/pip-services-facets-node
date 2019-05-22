@@ -1,10 +1,10 @@
 import { ConfigParams } from 'pip-services3-commons-node';
 import { PagingParams } from 'pip-services3-commons-node';
 import { DataPage } from 'pip-services3-commons-node';
-import { MongoDbPersistence } from 'pip-services3-mongodb-node';
+import { MongoosePersistence } from 'pip-services3-mongoose-node';
 import { FacetV1 } from '../data/version1/FacetV1';
 import { IFacetsPersistence } from './IFacetsPersistence';
-export declare class FacetsMongoDbPersistence extends MongoDbPersistence implements IFacetsPersistence {
+export declare class FacetsMongoDbPersistence extends MongoosePersistence implements IFacetsPersistence {
     protected _maxPageSize: number;
     constructor();
     configure(config: ConfigParams): void;
